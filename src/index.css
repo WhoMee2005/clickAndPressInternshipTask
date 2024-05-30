@@ -1,0 +1,756 @@
+/* font used: Mullish */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x:hidden;
+  position: relative;
+  font-family: "Mulish",sans-serif;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+  min-height: fit-content;
+  font-size: 1.15rem;
+}
+:root{
+  --blue:#458FF6;
+  --white:white;
+  --grey:#7D7987;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+#root{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+h1{
+  text-align: center;
+}
+.container{
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:2em;
+  align-items: center;
+  padding:0.5em;
+  padding-top:0;
+}
+.logo{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo span{
+  font-family: "Mulish";
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: left;
+}
+.logo img{
+  width: 30px;
+  height: 30px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top:0;
+  height: 10vh;
+  padding-inline: 5em;
+}
+.container h1{
+  font-size: 2em;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family:"Mulish",sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  min-width: 40%;
+  gap:1em;
+}
+.container .element1{
+  width: 101.58px;
+  height: 115px;
+  top:160px;
+  left: 0;
+  opacity: 100%;
+  position: absolute;
+}
+.header-content{
+  width:90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.header-text{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap:1em;
+}
+.header-text p{
+  font-family: Mulish;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height:1.5em;
+  text-align: left;  
+}
+.header-text h1{
+  font-family: Mulish;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-wrap: wrap;
+  text-align: left;  
+}
+.illustration{
+  width: 40%;
+}
+.consult-btn{
+  padding:1em 2em;
+  border-radius: 55px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: Mulish;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;  
+  outline: none;
+  border: none;
+}
+.consult-btn:hover{
+  background: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+button:active{
+  transform: scale(0.9,0.9);
+}
+
+
+/* hr adjusted according to the desgin */
+hr{
+  width:50px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+/* footer */
+footer{
+  width:100%;
+  height:60%;
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color:white;
+  overflow: hidden;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.section,.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width:27%;
+  text-wrap:pretty ;
+  gap:10px;
+}
+footer h2{
+  margin-bottom:1em;
+  font-size: 1.6em;
+}
+.info h2 img{
+  color: var(--blue);
+  background-color: white;
+  border-radius: 50%;
+  width: 1.1em;
+}
+.info h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+footer .element{
+  position: absolute;
+  bottom: -4em;
+  left: 0;
+  width: 7%;
+}
+footer .link{
+  color:white;
+}
+/* card type 2  */
+.card-2-container{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  gap:2em;
+}
+.card-2{
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.155);
+  flex-basis: 30%;
+  padding-bottom:2em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+}
+.card-2 img{
+  width: 100%;
+}
+.card-2 h3, .card-2 p{
+  padding-inline:10%;
+}
+.card-2 p{
+  color:grey;
+  font-size: 0.9em;
+}
+.card-2 .link{
+  margin-left:10%;
+  color:rgba(0, 68, 255, 0.638);
+}
+.card-2 .link:hover{
+  text-decoration: underline;
+}
+.button-2{
+  background-color: transparent;
+  padding:0.7em 3em;
+  font-size: 1em;
+  font-weight: 600;
+  border: 1px solid var(--blue);
+  border-radius: 2em;
+  color:var(--blue);
+}.button-2:hover{
+  color:white;
+  background-color: var(--blue);
+}
+/* Leading healthcare providers */
+.container-row{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 2em;
+}
+.container-row img{
+  width:45%;
+}
+.container-row div{
+  width:30%;
+}
+.container-row-text{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap:2em;
+}
+.container-row-text h1{
+  text-align: left;
+  font-size: 2em;
+}
+.DOMA .container-row-text{
+  width: 26%;
+}
+p{
+  font-family: Mulish;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.3em;
+  text-align: left;
+  color: var(--grey);  
+}
+.LHP .element{
+  position: absolute;
+  right:2%;
+  top: 60%;
+  width: 80px;
+}
+footer p{
+  color:white;
+}
+/* Slider */
+.slider{
+  color:white;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  min-height: 80%;
+  width: 70%;
+  padding:4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border-radius: 20px;
+  overflow: visible;
+}
+.slider-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+  width: 85%;
+}
+.slider-card div{
+  width: 50%;
+}
+.slider hr{
+  background-color:white;
+}
+.slider p{
+  color:white;
+}
+.customer-info{
+  display: flex;
+  float: row;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+}
+.customer-info img{
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  border:3px solid white;
+  object-fit:cover;
+  object-position: top;
+}
+.customer-detail h2{
+  font-size: 1.2em;
+}
+.slider-function{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:1em;
+  width: 80%;
+  align-items: center;
+
+}
+/* slider portion */
+.eclipseUnselected,.eclipseSelected{
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--grey);
+  opacity: 30%;
+}
+.eclipseSelected{
+  background-color: var(--blue);
+  opacity: 100%;
+}
+.slider-btn{
+  color: var(--grey);
+  font-size: 2.5em;
+  margin-inline: 1em;
+  margin-top:-1%;
+}
+.slider-btn:hover{
+  color: var(--blue);
+  cursor: pointer;
+
+}
+.slider .element{
+  position: absolute;
+  height: 30%;
+  top:-20px;
+  right:5px;
+  filter: brightness(200);
+
+}
+#element-2{
+  position: absolute;
+  left:-5%;
+  z-index: -1;
+  width: 8%;
+  bottom: 10%;
+}
+/* our services */
+.our-services-text{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  gap:2em;
+  align-items: center;
+}
+.our-services-text p{
+  width: 70%;
+  color:var(--grey);
+  text-align: center;
+}
+.irregular{
+  position: absolute;
+  width:50%;
+  left:0;
+  top:50px;
+  z-index: -1;
+}
+.services{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:2em;
+  width:75%;
+  min-height: 100vh;
+}
+.service{
+  min-height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap:0.5em;
+  flex-basis: 25%;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.373);
+  border-radius: 20px;
+  padding:2em;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  margin: 0.5em;
+}
+.service img{
+  height: 100px;
+  min-height: none;
+}
+.service h1{
+  font-size: 1.2em;
+}
+.service p{
+  font-size: 0.8em;
+  line-height: 2em;
+}
+/* for active nav */
+.active{
+  font-weight: 800;
+  color:black;
+}
+
+.userAuthentication{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap:1em;
+  /* background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%); */
+  background-image: url('https://img.pikbest.com/wp/202347/capsule-pill-pharmacy-and-healthcare-concept-blue-background-with-pills-in-panoramic-layout-3d-render_9763081.jpg!bwr800');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.userAuthentication-container{
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content: center;
+  width:30%;
+  gap:0.1em;
+  padding: 2em;
+  border:none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.167);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.255);
+  font-size: larger;
+  font-weight: lighter;
+  color:white;
+  text-shadow: 0px 0px 2px;
+}
+.userAuthentication-container .link-2{
+  color:beige;
+  font-weight: bold;
+}
+.userAuthentication-container hr{
+  margin:1em auto;
+  width: 50%;
+  background-color: white;
+}
+.userAuthentication-container input{
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-size: large;
+  border: 1px solid white;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.167);
+}
+.userAuthentication-container input::placeholder{
+  color:white;
+}
+.userAuthentication-container input[type="submit"]{
+  border-radius: 20px;
+  border:none;
+  color:white;
+}
+.userAuthentication-container input[type="submit"]:hover{
+  color:black;
+  background-color: white;
+}
+.logout-btn{
+  padding: 0.2em 1.5em;
+  border-radius: 20px;
+  color:var(--blue);
+  border: 1px solid var(--blue);
+  background-color: #fff;
+}
+.logout-btn:hover{
+  color:var(--white);
+  background-color: var(--blue);
+}
+/* mobile devices */
+@media (max-width:1080px){
+.logo{
+  width: 50%;
+}
+.logo img{
+  width: 20px;
+  height: 20px;
+}
+header{
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  height: fit-content;
+  margin-top: 0vh;
+  gap:1em;
+}
+nav{
+  flex-direction: column;
+  height: 70%;
+  gap:0.7em;
+  width: 45%;
+  font-size: 1em;
+}
+.container p{
+  min-height: 7em;
+}
+.header-content{
+  height: fit-content;
+  flex-direction: column;
+  width:100%;
+}
+.header-text{
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  gap:1em;
+}
+.header-text h1{
+  font-family: Mulish;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-wrap: wrap;
+  text-align: center;  
+}
+.illustration{
+  width: 90%;
+}
+.consult-btn{
+  padding:1em;
+  font-size: 1em;
+}
+
+/* footer */
+footer{
+  flex-direction: column;
+}
+.section,.info{
+  max-width:80%;
+  align-items: center;
+  text-align: center;
+  text-wrap:pretty ;
+}
+footer h2{
+  font-size: 1.2em;
+  margin-bottom: 0;
+  margin-top:1em;
+}
+.info h2 img{
+  color: var(--blue);
+  background-color: white;
+  border-radius: 50%;
+  width: 1em;
+}
+.info h2{
+  gap:2px;
+}
+.section{
+  align-items: center;
+  gap:0.5em;
+}
+/* card type 2  */
+.card-2-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap:1em;
+}
+.card-2{
+  flex-basis: auto;
+  padding-bottom:1em;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.card-2 h3, .card-2 p{
+  padding-inline:5%;
+  text-align: center;
+}
+.card-2 p{
+  font-size: 0.8em;
+  min-height: 4em;
+}   
+/* Leading healthcare providers */
+.container-row{
+  flex-direction: column;
+  align-items: center;
+}
+.container-row img{
+  width:90%;
+}
+.container-row div{
+  width:90%;
+  align-items: center;
+}
+.container-row-text{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-row-text h1{
+  text-align: center;
+}
+.DOMA .container-row-text{
+  width: 90%;
+}
+p{
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center!important;
+  min-height: 4em;
+}
+/* Slider */
+.slider{
+  width: 90%;
+  padding:1em;
+  gap: 1em;
+}
+.slider-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+.slider-card div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+}
+.slider p{
+  color:white;
+}
+.customer-info{
+  display: flex;
+  float: row;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+}
+.slider-function{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:1em;
+  width: 100%;
+  align-items: center;
+
+}
+/* slider portion */
+.eclipseUnselected,.eclipseSelected{
+  height: 10px !important;
+}
+/* our services */
+.services{
+  flex-direction: column;
+  gap:3em;
+}
+.service{
+  justify-content: center;
+  align-items: center;
+  gap:0em;
+  padding:1em;
+  width: 50%;
+  margin:1em;
+  min-height: 10em ;
+  height: 20em ;
+
+}
+.service img{
+  height: 100px !important;
+}
+.service p{
+  line-height: 1.05em;
+}
+
+.userAuthentication{
+  justify-content: center;
+  height: 100vh !important;
+  gap:1em;
+}
+.userAuthentication-container{
+  width: 90%;
+  gap:1em;
+}
+.our-services-text p,.DOMA p,.container-row-text p{
+  font-size: 0.9em;
+}
+footer{
+  height: unset;
+}
+footer .info p{
+  font-size: 0.8em;
+}
+}
