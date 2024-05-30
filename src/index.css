@@ -225,6 +225,7 @@ footer .link{
   align-items: flex-start;
   justify-content: space-between;
   gap: 1em;
+  margin: 0.5em;
 }
 .card-2 img{
   width: 100%;
@@ -460,6 +461,9 @@ footer p{
   font-weight: 800;
   color:black;
 }
+h1{
+  font-size: 2em;
+}
 
 .userAuthentication{
   display: flex;
@@ -469,7 +473,7 @@ footer p{
   height: 100vh;
   gap:1em;
   /* background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%); */
-  background-image: url('https://img.pikbest.com/wp/202347/capsule-pill-pharmacy-and-healthcare-concept-blue-background-with-pills-in-panoramic-layout-3d-render_9763081.jpg!bwr800');
+  background-image: url('https://images.pexels.com/photos/8383879/pexels-photo-8383879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

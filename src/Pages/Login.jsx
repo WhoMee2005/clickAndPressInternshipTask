@@ -38,7 +38,6 @@ export default function Login() {
   return (
     <div className='userAuthentication'>
         <div className="userAuthentication-container">
-
             <h1>Log In</h1>
             <hr />
             <input type="text" placeholder='Enter your email' value={email} onChange={handleEmail} /><br />
@@ -47,7 +46,6 @@ export default function Login() {
             <input type="submit" placeholder='Log In' onClick={handleSubmit} />
             {errorMessage&&<p style={{color:"red"}}>{errorMessage.message}</p>}
         </div>
-
     </div>
   )
 }
